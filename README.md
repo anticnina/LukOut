@@ -24,13 +24,13 @@ Koriscene biblioteke po skriptama:
 STRUKTURA PROJEKTA
 -------------------
 LukOut/
-  Dataset/                    -> pripremljen skup slika (train/val/test, edible/inedible)
-  lukout_nasaNN.py             -> CNN treniran od nule (nasa mreza)
-  lukout.py                   -> glavni model (EfficientNetB0, transfer learning)
-  lukout_izvestaj.py           -> zajednicke funkcije za evaluaciju i grafike
-  skripte/
-    plant_image_collector.py  -> preuzimanje slika sa GBIF-a
-    dataset_prepare.py        -> priprema/augmentacija i podela na train/val/test
+├── Dataset/                      # skup slika (nije u repozitorijumu)
+├── scripts/
+│   ├── plant_image_collector.py  # preuzimanje slika sa GBIF-a
+│   └── dataset_prepare.py        # priprema i podela na train/val/test
+├── lukout.py                     # glavni model (EfficientNetB0)
+├── lukout_nasaNN.py              # CNN treniran od nule
+└── lukout_izvestaj.py            # funkcije za evaluaciju i grafike
 
 POKRETANJE (redosled)
 ----------------------
