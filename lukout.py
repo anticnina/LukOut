@@ -35,7 +35,7 @@ LR_FINETUNE     = 5e-6
 # ispod ovog praga -> nejestivo 
 CONFIDENCE_THRESHOLDS = [0.5, 0.9]
 
-DATASET_DIR = Path("Dataset")
+DATASET_DIR = Path("dataset_prepared")
 RESULTS_DIR = Path("results")
 RESULTS_DIR.mkdir(exist_ok=True)
 
