@@ -1,0 +1,85 @@
+############################################################
+  PRAG = 0.5
+############################################################
+
+VALIDACIJA (prag = 0.5)
+              precision    recall  f1-score   support
+
+      edible     0.5000    0.9867    0.6637        75
+    inedible     0.5000    0.0133    0.0260        75
+
+    accuracy                         0.5000       150
+   macro avg     0.5000    0.5000    0.3448       150
+weighted avg     0.5000    0.5000    0.3448       150
+
+Tacnost (Accuracy): 0.5000
+AUC-ROC: 0.6862
+
+TEST (prag = 0.5)
+              precision    recall  f1-score   support
+
+      edible     0.5000    1.0000    0.6667        75
+    inedible     0.0000    0.0000    0.0000        75
+
+    accuracy                         0.5000       150
+   macro avg     0.2500    0.5000    0.3333       150
+weighted avg     0.2500    0.5000    0.3333       150
+
+Tacnost (Accuracy): 0.5000
+AUC-ROC: 0.6782
+
+FINALNI IZVESTAJ - LukOut nasaNN
+Model: CNN od nule (bez transfer learninga)
+Klase: ['edible', 'inedible']
+Safety prag: 0.5 (ispod -> nejestivo)
+
+Metrika                           Val     Test
+Tacnost (Accuracy)             0.5000   0.5000
+F1-score (macro)               0.3448   0.3333
+Preciznost (macro)             0.5000   0.2500
+Odziv (macro)                  0.5000   0.5000
+AUC-ROC                        0.6862   0.6782
+Recall(nejestivo)              0.0133   0.0000
+
+############################################################
+  PRAG = 0.9
+############################################################
+
+VALIDACIJA (prag = 0.9)
+              precision    recall  f1-score   support
+
+      edible     0.0000    0.0000    0.0000        75
+    inedible     0.5000    1.0000    0.6667        75
+
+    accuracy                         0.5000       150
+   macro avg     0.2500    0.5000    0.3333       150
+weighted avg     0.2500    0.5000    0.3333       150
+
+Tacnost (Accuracy): 0.5000
+AUC-ROC: 0.6862
+
+TEST (prag = 0.9)
+              precision    recall  f1-score   support
+
+      edible     0.0000    0.0000    0.0000        75
+    inedible     0.5000    1.0000    0.6667        75
+
+    accuracy                         0.5000       150
+   macro avg     0.2500    0.5000    0.3333       150
+weighted avg     0.2500    0.5000    0.3333       150
+
+Tacnost (Accuracy): 0.5000
+AUC-ROC: 0.6782
+
+FINALNI IZVESTAJ - LukOut nasaNN
+Model: CNN od nule (bez transfer learninga)
+Klase: ['edible', 'inedible']
+Safety prag: 0.9 (ispod -> nejestivo)
+
+Metrika                           Val     Test
+Tacnost (Accuracy)             0.5000   0.5000
+F1-score (macro)               0.3333   0.3333
+Preciznost (macro)             0.2500   0.2500
+Odziv (macro)                  0.5000   0.5000
+AUC-ROC                        0.6862   0.6782
+Recall(nejestivo)              1.0000   1.0000

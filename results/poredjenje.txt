@@ -1,0 +1,85 @@
+############################################################
+  PRAG = 0.5
+############################################################
+
+VALIDACIJA (prag = 0.5)
+              precision    recall  f1-score   support
+
+      edible     0.9067    0.9067    0.9067        75
+    inedible     0.9067    0.9067    0.9067        75
+
+    accuracy                         0.9067       150
+   macro avg     0.9067    0.9067    0.9067       150
+weighted avg     0.9067    0.9067    0.9067       150
+
+Tacnost (Accuracy): 0.9067
+AUC-ROC: 0.9758
+
+TEST (prag = 0.5)
+              precision    recall  f1-score   support
+
+      edible     0.8986    0.8267    0.8611        75
+    inedible     0.8395    0.9067    0.8718        75
+
+    accuracy                         0.8667       150
+   macro avg     0.8690    0.8667    0.8665       150
+weighted avg     0.8690    0.8667    0.8665       150
+
+Tacnost (Accuracy): 0.8667
+AUC-ROC: 0.9573
+
+FINALNI IZVESTAJ - LukOut
+Model: EfficientNetB0 (transfer learning + fine-tuning)
+Klase: ['edible', 'inedible']
+Safety prag: 0.5 (ispod -> nejestivo)
+
+Metrika                           Val     Test
+Tacnost (Accuracy)             0.9067   0.8667
+F1-score (macro)               0.9067   0.8665
+Preciznost (macro)             0.9067   0.8690
+Odziv (macro)                  0.9067   0.8667
+AUC-ROC                        0.9758   0.9573
+Recall(nejestivo)              0.9067   0.9067
+
+############################################################
+  PRAG = 0.9
+############################################################
+
+VALIDACIJA (prag = 0.9)
+              precision    recall  f1-score   support
+
+      edible     1.0000    0.4533    0.6239        75
+    inedible     0.6466    1.0000    0.7853        75
+
+    accuracy                         0.7267       150
+   macro avg     0.8233    0.7267    0.7046       150
+weighted avg     0.8233    0.7267    0.7046       150
+
+Tacnost (Accuracy): 0.7267
+AUC-ROC: 0.9758
+
+TEST (prag = 0.9)
+              precision    recall  f1-score   support
+
+      edible     1.0000    0.5067    0.6726        75
+    inedible     0.6696    1.0000    0.8021        75
+
+    accuracy                         0.7533       150
+   macro avg     0.8348    0.7533    0.7374       150
+weighted avg     0.8348    0.7533    0.7374       150
+
+Tacnost (Accuracy): 0.7533
+AUC-ROC: 0.9573
+
+FINALNI IZVESTAJ - LukOut
+Model: EfficientNetB0 (transfer learning + fine-tuning)
+Klase: ['edible', 'inedible']
+Safety prag: 0.9 (ispod -> nejestivo)
+
+Metrika                           Val     Test
+Tacnost (Accuracy)             0.7267   0.7533
+F1-score (macro)               0.7046   0.7374
+Preciznost (macro)             0.8233   0.8348
+Odziv (macro)                  0.7267   0.7533
+AUC-ROC                        0.9758   0.9573
+Recall(nejestivo)              1.0000   1.0000
