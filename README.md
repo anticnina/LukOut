@@ -23,6 +23,7 @@ Koriscene biblioteke po skriptama:
 
 STRUKTURA PROJEKTA
 -------------------
+```
 LukOut/
 ├── Dataset/                      # skup slika (nije u repozitorijumu)
 ├── scripts/
@@ -31,6 +32,7 @@ LukOut/
 ├── lukout.py                     # glavni model (EfficientNetB0)
 ├── lukout_nasaNN.py              # CNN treniran od nule
 └── lukout_izvestaj.py            # funkcije za evaluaciju i grafike
+```
 
 POKRETANJE (redosled)
 ----------------------
