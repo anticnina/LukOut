@@ -31,7 +31,7 @@ LR     = 1e-4
 # ispod ovog praga -> nejestivo 
 CONFIDENCE_THRESHOLDS = [0.5, 0.9]
 
-DATASET_DIR = Path("Dataset")
+DATASET_DIR = Path("dataset_prepared")
 RESULTS_DIR = Path("results_nasaNN")
 RESULTS_DIR.mkdir(exist_ok=True)
 
